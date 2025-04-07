@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Healthy Vending Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+  <img src="images/logo.png" alt="Healthy Vending Logo" class="site-logo" />
+  <h1>Welcome to Healthy Vending Solutions</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="references.html">References</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+  <div class="page-wrapper">
+    <!-- Left side image -->
+    <!-- Right side image -->
+    <div class="side-column left">
+  <img src="images/vending-machine.png" alt="Healthy Vending Machine" />
+  <img src="images/vending-machine.png" alt="Healthy Vending Machine Duplicate" />
+</div>
+
+    <main class="main-content">
+      <section class="hero">
+        <h2>Get in Touch</h2>
+        <p>Have questions or want to explore vending opportunities? Reach out to us directly below.</p>
+      </section>
+
+      <section class="contact-section">
+        <!-- Contact form -->
+        <form class="contact-form" action="submit_form.php" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Business contact info -->
+        <div class="contact-info">
+          <h3>Contact Information</h3>
+          <p><strong>Email:</strong> info@healthyvendingsolutions.com</p>
+          <p><strong>Phone:</strong> (210) 555-0123</p>
+          <p><strong>Address:</strong> 123 Wellness Ave, San Antonio, TX</p>
+        </div>
+      </section>
+    </main>
+
+<!-- same structure for the right side -->
+<div class="side-column right">
+  <img src="images/exampleImage.jpg" alt="Happy Kids" />
+  <img src="images/exampleImage.jpg" alt="Happy Kids Duplicate" />
+</div>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Healthy Vending Solutions. All rights reserved.</p>
+  </footer>
+</body>
+</html>
