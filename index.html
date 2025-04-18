@@ -25,6 +25,13 @@
       padding: 0;
       font-family: 'Poppins', sans-serif;
     }
+    .hero-image {
+      background: url('images/vending-machine.png') center center/cover no-repeat;
+      min-height: 60vh;
+      display: flex;
+      align-items: center;
+      color: white;
+    }
   </style>
 </head>
 <body>
@@ -49,29 +56,23 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
+  <!-- Hero Section with Background Image -->
   <main>
-    <section class="bg-light text-center py-5" style="min-height: 60vh; display: flex; align-items: center;">
-      <div class="container">
-        <h1 class="display-4 fw-bold mb-3">Healthy Vending Solutions for Your Business</h1>
-        <p class="lead mb-4">Fresh, convenient, and worry-free snack options your team will love.</p>
-        <a href="contact.html" class="btn btn-success btn-lg">Get a Free Machine</a>
-      </div>
-    </section>
-
-    <!-- Optional: Background Image Hero (uncomment to use) -->
-    <!--
-    <section
-      class="text-center text-white py-5"
-      style="background: url('images/hero-vending.jpg') center center/cover no-repeat; min-height: 60vh; display: flex; align-items: center;">
+    <section class="hero-image text-center py-5">
       <div class="container">
         <h1 class="display-4 fw-bold mb-3">Healthy Vending Solutions for Your Business</h1>
         <p class="lead mb-4">Fresh, convenient, and worry-free snack options your team will love.</p>
         <a href="contact.html" class="btn btn-light btn-lg">Get a Free Machine</a>
       </div>
     </section>
-    -->
 
+    <!-- Featured Image Example -->
+    <section class="text-center py-5">
+      <div class="container">
+        <h2 class="fw-bold mb-3">See Our Machines in Action</h2>
+        <img src="images/exampleImage.jpg" alt="Healthy Vending Machine" class="img-fluid rounded shadow" style="max-width: 700px;">
+      </div>
+    </section>
   </main>
 
   <!-- Footer -->
