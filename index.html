@@ -29,7 +29,7 @@
       content: "";
       position: absolute;
       inset: 0;
-      background: rgba(0, 0, 0, 0.4); /* dark overlay */
+      background: rgba(0, 0, 0, 0.4);
       z-index: 1;
     }
 
@@ -71,120 +71,114 @@
       <a href="#contactForm" class="btn btn-light btn-lg">Get in Touch</a>
     </div>
   </section>
-<!-- About Us Section -->
-<section class="py-5 text-center">
-  <div class="container">
-    <h2 class="mb-5 text-primary" style="border-bottom: 1px solid #ccc; display: inline-block;">About Us</h2>
-    <div class="row text-center">
-      
-      <!-- Who We Are -->
-      <div class="col-md-4 mb-4">
-        <img src="images/vending-machine.png" alt="Who we are" class="rounded-circle mb-3" width="200" height="200">
-        <h5>Who we are?</h5>
-        <p class="text-muted">We are a leading provider of healthy vending solutions in South Texas, offering cutting-edge machines designed to deliver convenience, quality, and nutrition in every selection.</p>
-      </div>
 
-      <!-- Why Us -->
-      <div class="col-md-4 mb-4">
-        <img src="images/exampleImage.png" alt="Why Us" class="rounded-circle mb-3" width="200" height="200">
-        <h5>Why Us?</h5>
-        <p class="text-muted">From nutrient-rich snacks to refreshing beverages, we offer a fully managed vending experience — including 24/7 remote inventory tracking — tailored to organizations of all sizes.</p>
+  <!-- About Us Section -->
+  <section class="py-5 text-center">
+    <div class="container">
+      <h2 class="mb-5 text-primary" style="border-bottom: 1px solid #ccc; display: inline-block;">About Us</h2>
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <img src="images/vending-machine.png" alt="Who we are" class="rounded-circle mb-3" width="200" height="200">
+          <h5>Who we are?</h5>
+          <p class="text-muted">We are a leading provider of healthy vending solutions in South Texas, offering cutting-edge machines designed to deliver convenience, quality, and nutrition in every selection.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="images/exampleImage.png" alt="Why Us" class="rounded-circle mb-3" width="200" height="200">
+          <h5>Why Us?</h5>
+          <p class="text-muted">From nutrient-rich snacks to refreshing beverages, we offer a fully managed vending experience — including 24/7 remote inventory tracking — tailored to organizations of all sizes.</p>
+        </div>
+        <div class="col-md-4 mb-4">
+          <img src="images/exampleImage.jpg" alt="Free Consultation" class="rounded-circle mb-3" width="200" height="200">
+          <h5>Free Consultation</h5>
+          <p class="text-muted">Schedule a free consultation to explore how we can bring healthier options to your team — with customized programs that can also support revenue-sharing opportunities for your organization.</p>
+        </div>
       </div>
-
-      <!-- Free Consultation -->
-      <div class="col-md-4 mb-4">
-        <img src="images/exampleImage.jpg" alt="Free Consultation" class="rounded-circle mb-3" width="200" height="200">
-        <h5>Free Consultation</h5>
-        <p class="text-muted">Schedule a free consultation to explore how we can bring healthier options to your team — with customized programs that can also support revenue-sharing opportunities for your organization.</p>
-      </div>
-
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Contact Section -->
-<section id="contactForm" class="py-5 bg-light text-center">
-  <div class="container">
-    <h2 class="mb-4">Get in Touch</h2>
-    <p class="mb-4">We’d love to hear from you! Send us a quick message and we’ll get back to you ASAP.</p>
+  <section id="contactForm" class="py-5 bg-light text-center">
+    <div class="container">
+      <h2 class="mb-4">Get in Touch</h2>
+      <p class="mb-4">We’d love to hear from you! Send us a quick message and we’ll get back to you ASAP.</p>
 
-    <!-- Contact Button -->
-    <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse">
-      Open Contact Form
-    </button>
+      <!-- Contact Button -->
+      <button class="btn btn-success" type="button" data-bs-toggle="collapse" data-bs-target="#contactCollapse">
+        Open Contact Form
+      </button>
 
-    <!-- Collapsible Contact Form -->
-    <div class="collapse mt-4" id="contactCollapse">
-      <form action="mailto:nmorrow1111@yahoo.com" method="POST" enctype="text/plain">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <div class="mb-3 text-start">
-              <label for="name" class="form-label">Name</label>
-              <input type="text" name="name" class="form-control" required>
+      <!-- Collapsible Contact Form -->
+      <div class="collapse mt-4" id="contactCollapse">
+        <form action="https://formsubmit.co/nmorrow1111@yahoo.com" method="POST">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://nmorrow1111.github.io/QualityHealthVending/#contactForm">
+
+          <div class="row justify-content-center">
+            <div class="col-md-6">
+              <div class="mb-3 text-start">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" class="form-control" required>
+              </div>
+              <div class="mb-3 text-start">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" required>
+              </div>
+              <div class="mb-3 text-start">
+                <label for="message" class="form-label">Message</label>
+                <textarea name="message" rows="4" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
             </div>
-            <div class="mb-3 text-start">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" name="email" class="form-control" required>
-            </div>
-            <div class="mb-3 text-start">
-              <label for="message" class="form-label">Message</label>
-              <textarea name="message" rows="4" class="form-control" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+
   <!-- Quote Section -->
-<section class="py-5 bg-white text-center">
-  <div class="container">
-    <blockquote class="blockquote">
-      <p class="fs-4 fst-italic" style="color: #555;">“Let food be your medicine and medicine be your food.”</p>
-      <footer class="blockquote-footer mt-2">Hippocrates</footer>
-    </blockquote>
-  </div>
-</section>
-
-<section class="py-5 text-center bg-white">
-  <div class="container">
-    <div class="row justify-content-center g-4">
-      
-      <!-- Craig -->
-      <div class="col-md-5">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-success">Owner / Affiliate</h5>
-            <h6 class="fw-bold mb-2">Craig M.</h6>
-            <p class="mb-1"><strong>Phone:</strong> <a href="tel:2107239388">(210) 723-9388</a></p>
-            <p><strong>Email:</strong> <a href="mailto:CraigM@QualityHealthVending.com">CraigM@QualityHealthVending.com</a></p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Nick -->
-      <div class="col-md-5">
-        <div class="card shadow-sm border-0 h-100">
-          <div class="card-body">
-            <h5 class="card-title text-success">Owner / Affiliate</h5>
-            <h6 class="fw-bold mb-2">Nick M.</h6>
-            <p class="mb-1"><strong>Phone:</strong> <a href="tel:2104879495">(210) 487-9495</a></p>
-            <p><strong>Email:</strong> <a href="mailto:NickM@QualityHealthVending.com">NickM@QualityHealthVending.com</a></p>
-          </div>
-        </div>
-      </div>
-
+  <section class="py-5 bg-white text-center">
+    <div class="container">
+      <blockquote class="blockquote">
+        <p class="fs-4 fst-italic" style="color: #555;">“Let food be your medicine and medicine be your food.”</p>
+        <footer class="blockquote-footer mt-2">Hippocrates</footer>
+      </blockquote>
     </div>
-  </div>
-</section>
+  </section>
 
+  <!-- Contact Info Cards -->
+  <section class="py-5 text-center bg-white">
+    <div class="container">
+      <div class="row justify-content-center g-4">
+        <div class="col-md-5">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title text-success">Owner / Affiliate</h5>
+              <h6 class="fw-bold mb-2">Craig M.</h6>
+              <p class="mb-1"><strong>Phone:</strong> <a href="tel:2107239388">(210) 723-9388</a></p>
+              <p><strong>Email:</strong> <a href="mailto:CraigM@QualityHealthVending.com">CraigM@QualityHealthVending.com</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="card shadow-sm border-0 h-100">
+            <div class="card-body">
+              <h5 class="card-title text-success">Owner / Affiliate</h5>
+              <h6 class="fw-bold mb-2">Nick M.</h6>
+              <p class="mb-1"><strong>Phone:</strong> <a href="tel:2104879495">(210) 487-9495</a></p>
+              <p><strong>Email:</strong> <a href="mailto:NickM@QualityHealthVending.com">NickM@QualityHealthVending.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <!-- Footer -->
   <footer class="footer">
     &copy; 2025 Quality Health Vending. All rights reserved.
   </footer>
 
-  <!-- Optional: Chat Widget Integration -->
+  <!-- Chat Widget -->
   <script type="text/javascript">
     var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     (function () {
@@ -196,7 +190,6 @@
       s0.parentNode.insertBefore(s1, s0);
     })();
   </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
